@@ -14,11 +14,8 @@ function embed() {
   const footerIcon = document.getElementById("footerIcon").value
   const thumbnail = document.getElementById("thumbnail").value
   const image = document.getElementById("image").value
-  const index =
-   document.getElementById("index").value == 1 ||
-   document.getElementById("index").value == ""
-    ? "]"
-    : ";" + document.getElementById("index").value + "]"
+  const timestamp = document.getElementById("timestamp").value
+  const index = (document.getElementById("index").value == 1 || document.getElementById("index").value == "") ? "]" : ";" + document.getElementById("index").value + "]"
 
   const fieldName1 = document.getElementById("fieldName1").value
   const fieldValue1 = document.getElementById("fieldValue1").value
@@ -184,6 +181,11 @@ function embed() {
 
   if (image != "") {
    output = output + "\n" + `\$image[${image}` + index
+  }
+
+  if (timestamp == "yes") {
+   const timestampOutput = (cleanIndex == "" || cleanIndex == 1) ? `\$addTimestamp` : `\$addTimestamp[${cleanIndex}]` 
+   output = output + "\n" + timestampOutput
   }
 
   if (fieldName1 != "" && fieldValue1 != "") {

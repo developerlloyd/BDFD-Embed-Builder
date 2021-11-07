@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <div id="container">
+      <h1><strong>BDFD Embed Builder</strong></h1>
+      <p><em>Build embeds without coding!</em></p>
+      <hr />
+      <details>
+         <summary>Settings</summary>
+         <p>Embed Index</p>
+         <textarea id="index" name="Embed Index" placeholder="1" rows="1" cols="50"></textarea>
+         <p>
+            Add <code>$nomention</code>?
+            <select id="nomention">
+               <option disabled selected value="no">
+                  no
+               </option>
+               <option value="yes">yes</option>
+               <option value="no">no</option>
+            </select>
+         </p>
+      </details>
+      <details>
+         <summary>Content</summary>
+         <textarea id="content" name="content" placeholder="Some text..." rows="3" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Title</summary>
+         <textarea id="title" name="title" placeholder="Some text..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Description</summary>
+         <textarea id="description" name="description" placeholder="Some text..." rows="3" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Color</summary>
+         <textarea id="color" name="color" placeholder="A color hex..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Author</summary>
+         <p>Author</p>
+         <textarea id="author" name="author" placeholder="Some text..." rows="1" cols="50"></textarea>
+         <p>Author Icon</p>
+         <textarea id="authorIcon" name="authorIcon" placeholder="Author icon URL..." rows="1" cols="50"></textarea>
+         <p>Author URL</p>
+         <textarea id="authorURL" name="authorURL" placeholder="Author hyper URL..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Footer</summary>
+         <p>Footer Text</p>
+         <textarea id="footer" name="footer" placeholder="Some text..." rows="1" cols="50"></textarea>
+         <p>Footer Icon</p>
+         <textarea id="footerIcon" name="footerIcon" placeholder="Footer icon URL..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Image</summary>
+         <textarea id="image" name="image" placeholder="Image URL..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Thumbnail</summary>
+         <textarea id="thumbnail" name="thumbnail" placeholder="Thumbnail image URL..." rows="1" cols="50"></textarea>
+      </details>
+      <details>
+         <summary>Add Fields</summary>
+         <p>Field Name</p>
+         <textarea id="fieldName1" name="fieldName1" placeholder="Some text..." rows="1" cols="50"></textarea>
+         <p>Field Value</p>
+         <textarea id="fieldValue1" name="fieldValue1" placeholder="Some text..." rows="3" cols="50"></textarea>
+         <p>
+            Field Inline?
+            <select id="fieldInline1">
+               <option disabled selected value="no">
+                  no
+               </option>
+               <option value="yes">yes</option>
+               <option value="no">no</option>
+            </select>
+         </p>
+         <details>
+            <summary>Field 2</summary>
+            <p>Field Name</p>
+            <textarea id="fieldName2" name="fieldName2" placeholder="Some text..." rows="1" cols="50"></textarea>
+            <p>Field Value</p>
+            <textarea id="fieldValue2" name="fieldValue2" placeholder="Some text..." rows="3" cols="50"></textarea>
+            <p>
+               Field Inline?
+               <select id="fieldInline2">
+                  <option disabled selected value="no">
+                     no
+                  </option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+               </select>
+            </p>
+            <details>
+               <summary>Field 3</summary>
+               <p>Field Name</p>
+               <textarea id="fieldName3" name="fieldName3" placeholder="Some text..." rows="1" cols="50"></textarea>
+               <p>Field Value</p>
+               <textarea id="fieldValue3" name="fieldValue3" placeholder="Some text..." rows="3" cols="50"></textarea>
+               <p>
+                  Field Inline?
+                  <select id="fieldInline3">
+                     <option disabled selected value="no">
+                        no
+                     </option>
+                     <option value="yes">yes</option>
+                     <option value="no">no</option>
+                  </select>
+               </p>
+               <details>
+                  <summary>Field 4</summary>
+                  <p>Field Name</p>
+                  <textarea id="fieldName4" name="fieldName4" placeholder="Some text..." rows="1" cols="50"></textarea>
+                  <p>Field Value</p>
+                  <textarea id="fieldValue4" name="fieldValue4" placeholder="Some text..." rows="3" cols="50"></textarea>
+                  <p>
+                     Field Inline?
+                     <select id="fieldInline4">
+                        <option disabled selected value="no">
+                           no
+                        </option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                     </select>
+                  </p>
+                  <details>
+                     <summary>Field 5</summary>
+                     <p>Field Name</p>
+                     <textarea id="fieldName5" name="fieldName5" placeholder="Some text..." rows="1" cols="50"></textarea>
+                     <p>Field Value</p>
+                     <textarea id="fieldValue5" name="fieldValue5" placeholder="Some text..." rows="3" cols="50"></textarea>
+                     <p>
+                        Field Inline?
+                        <select id="fieldInline5">
+                           <option disabled selected value="no">
+                              no
+                           </option>
+                           <option value="yes">yes</option>
+                           <option value="no">no</option>
+                        </select>
+                     </p>
+                     <details>
+                        <summary>Field 6</summary>
+                        <p>Field Name</p>
+                        <textarea id="fieldName6" name="fieldName6" placeholder="Some text..." rows="1" cols="50"></textarea>
+                        <p>Field Value</p>
+                        <textarea id="fieldValue6" name="fieldValue6" placeholder="Some text..." rows="3" cols="50"></textarea>
+                        <p>
+                           Field Inline?
+                           <select id="fieldInline6">
+                              <option disabled selected value="no">
+                                 no
+                              </option>
+                              <option value="yes">yes</option>
+                              <option value="no">no</option>
+                           </select>
+                        </p>
+                        <details>
+                           <summary>Field 7</summary>
+                           <p>Field Name</p>
+                           <textarea id="fieldName7" name="fieldName7" placeholder="Some text..." rows="1" cols="50"></textarea>
+                           <p>Field Value</p>
+                           <textarea id="fieldValue7" name="fieldValue7" placeholder="Some text..." rows="3" cols="50"></textarea>
+                           <p>
+                              Field Inline?
+                              <select id="fieldInline7">
+                                 <option disabled selected value="no">
+                                    no
+                                 </option>
+                                 <option value="yes">yes</option>
+                                 <option value="no">no</option>
+                              </select>
+                           </p>
+                           <details>
+                              <summary>Field 8</summary>
+                              <p>Field Name</p>
+                              <textarea id="fieldName8" name="fieldName8" placeholder="Some text..." rows="1" cols="50"></textarea>
+                              <p>Field Value</p>
+                              <textarea id="fieldValue8" name="fieldValue8" placeholder="Some text..." rows="3" cols="50"></textarea>
+                              <p>
+                                 Field Inline?
+                                 <select id="fieldInline8">
+                                    <option disabled selected value="no">
+                                       no
+                                    </option>
+                                    <option value="yes">yes</option>
+                                    <option value="no">no</option>
+                                 </select>
+                              </p>
+                              <details>
+                                 <summary>Field 9</summary>
+                                 <p>Field Name</p>
+                                 <textarea id="fieldName9" name="fieldName9" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                 <p>Field Value</p>
+                                 <textarea id="fieldValue9" name="fieldValue9" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                 <p>
+                                    Field Inline?
+                                    <select id="fieldInline9">
+                                       <option disabled selected value="no">
+                                          no
+                                       </option>
+                                       <option value="yes">yes</option>
+                                       <option value="no">no</option>
+                                    </select>
+                                 </p>
+                                 <details>
+                                    <summary>Field 10</summary>
+                                    <p>Field Name</p>
+                                    <textarea id="fieldName10" name="fieldName10" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                    <p>Field Value</p>
+                                    <textarea id="fieldValue10" name="fieldValue10" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                    <p>
+                                       Field Inline?
+                                       <select id="fieldInline10">
+                                          <option disabled selected value="no">
+                                             no
+                                          </option>
+                                          <option value="yes">yes</option>
+                                          <option value="no">no</option>
+                                       </select>
+                                    </p>
+                                    <details>
+                                       <summary>Field 11</summary>
+                                       <p>Field Name</p>
+                                       <textarea id="fieldName11" name="fieldName11" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                       <p>Field Value</p>
+                                       <textarea id="fieldValue11" name="fieldValue11" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                       <p>
+                                          Field Inline?
+                                          <select id="fieldInline11">
+                                             <option disabled selected value="no">
+                                                no
+                                             </option>
+                                             <option value="yes">yes</option>
+                                             <option value="no">no</option>
+                                          </select>
+                                       </p>
+                                       <details>
+                                          <summary>Field 12</summary>
+                                          <p>Field Name</p>
+                                          <textarea id="fieldName12" name="fieldName12" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                          <p>Field Value</p>
+                                          <textarea id="fieldValue12" name="fieldValue12" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                          <p>
+                                             Field Inline?
+                                             <select id="fieldInline12">
+                                                <option disabled selected value="no">
+                                                   no
+                                                </option>
+                                                <option value="yes">yes</option>
+                                                <option value="no">no</option>
+                                             </select>
+                                          </p>
+                                          <details>
+                                             <summary>Field 13</summary>
+                                             <p>Field Name</p>
+                                             <textarea id="fieldName13" name="fieldName13" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                             <p>Field Value</p>
+                                             <textarea id="fieldValue13" name="fieldValue13" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                             <p>
+                                                Field Inline?
+                                                <select id="fieldInline13">
+                                                   <option disabled selected value="no">
+                                                      no
+                                                   </option>
+                                                   <option value="yes">yes</option>
+                                                   <option value="no">no</option>
+                                                </select>
+                                             </p>
+                                             <details>
+                                                <summary>Field 14</summary>
+                                                <p>Field Name</p>
+                                                <textarea id="fieldName14" name="fieldName14" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                <p>Field Value</p>
+                                                <textarea id="fieldValue14" name="fieldValue14" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                <p>
+                                                   Field Inline?
+                                                   <select id="fieldInline14">
+                                                      <option disabled selected value="no">
+                                                         no
+                                                      </option>
+                                                      <option value="yes">yes</option>
+                                                      <option value="no">no</option>
+                                                   </select>
+                                                </p>
+                                                <details>
+                                                   <summary>Field 15</summary>
+                                                   <p>Field Name</p>
+                                                   <textarea id="fieldName15" name="fieldName15" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                   <p>Field Value</p>
+                                                   <textarea id="fieldValue15" name="fieldValue15" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                   <p>
+                                                      Field Inline?
+                                                      <select id="fieldInline15">
+                                                         <option disabled selected value="no">
+                                                            no
+                                                         </option>
+                                                         <option value="yes">yes</option>
+                                                         <option value="no">no</option>
+                                                      </select>
+                                                   </p>
+                                                   <details>
+                                                      <summary>Field 16</summary>
+                                                      <p>Field Name</p>
+                                                      <textarea id="fieldName16" name="fieldName16" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                      <p>Field Value</p>
+                                                      <textarea id="fieldValue16" name="fieldValue16" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                      <p>
+                                                         Field Inline?
+                                                         <select id="fieldInline16">
+                                                            <option disabled selected value="no">
+                                                               no
+                                                            </option>
+                                                            <option value="yes">yes</option>
+                                                            <option value="no">no</option>
+                                                         </select>
+                                                      </p>
+                                                      <details>
+                                                         <summary>Field 17</summary>
+                                                         <p>Field Name</p>
+                                                         <textarea id="fieldName17" name="fieldName17" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                         <p>Field Value</p>
+                                                         <textarea id="fieldValue17" name="fieldValue17" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                         <p>
+                                                            Field Inline?
+                                                            <select id="fieldInline17">
+                                                               <option disabled selected value="no">
+                                                                  no
+                                                               </option>
+                                                               <option value="yes">yes</option>
+                                                               <option value="no">no</option>
+                                                            </select>
+                                                         </p>
+                                                         <details>
+                                                            <summary>Field 18</summary>
+                                                            <p>Field Name</p>
+                                                            <textarea id="fieldName18" name="fieldName18" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                            <p>Field Value</p>
+                                                            <textarea id="fieldValue18" name="fieldValue18" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                            <p>
+                                                               Field Inline?
+                                                               <select id="fieldInline18">
+                                                                  <option disabled selected value="no">
+                                                                     no
+                                                                  </option>
+                                                                  <option value="yes">yes</option>
+                                                                  <option value="no">no</option>
+                                                               </select>
+                                                            </p>
+                                                            <details>
+                                                               <summary>Field 19</summary>
+                                                               <p>Field Name</p>
+                                                               <textarea id="fieldName19" name="fieldName19" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                               <p>Field Value</p>
+                                                               <textarea id="fieldValue19" name="fieldValue19" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                               <p>
+                                                                  Field Inline?
+                                                                  <select id="fieldInline19">
+                                                                     <option disabled selected value="no">
+                                                                        no
+                                                                     </option>
+                                                                     <option value="yes">yes</option>
+                                                                     <option value="no">no</option>
+                                                                  </select>
+                                                               </p>
+                                                               <details>
+                                                                  <summary>Field 20</summary>
+                                                                  <p>Field Name</p>
+                                                                  <textarea id="fieldName20" name="fieldName20" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                  <p>Field Value</p>
+                                                                  <textarea id="fieldValue20" name="fieldValue20" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                  <p>
+                                                                     Field Inline?
+                                                                     <select id="fieldInline20">
+                                                                        <option disabled selected value="no">
+                                                                           no
+                                                                        </option>
+                                                                        <option value="yes">yes</option>
+                                                                        <option value="no">no</option>
+                                                                     </select>
+                                                                  </p>
+                                                                  <details>
+                                                                     <summary>Field 21</summary>
+                                                                     <p>Field Name</p>
+                                                                     <textarea id="fieldName21" name="fieldName21" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                     <p>Field Value</p>
+                                                                     <textarea id="fieldValue21" name="fieldValue21" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                     <p>
+                                                                        Field Inline?
+                                                                        <select id="fieldInline21">
+                                                                           <option disabled selected value="no">
+                                                                              no
+                                                                           </option>
+                                                                           <option value="yes">yes</option>
+                                                                           <option value="no">no</option>
+                                                                        </select>
+                                                                     </p>
+                                                                     <details>
+                                                                        <summary>Field 22</summary>
+                                                                        <p>Field Name</p>
+                                                                        <textarea id="fieldName22" name="fieldName22" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                        <p>Field Value</p>
+                                                                        <textarea id="fieldValue22" name="fieldValue22" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                        <p>
+                                                                           Field Inline?
+                                                                           <select id="fieldInline22">
+                                                                              <option disabled selected value="no">
+                                                                                 no
+                                                                              </option>
+                                                                              <option value="yes">yes</option>
+                                                                              <option value="no">no</option>
+                                                                           </select>
+                                                                        </p>
+                                                                        <details>
+                                                                           <summary>Field 23</summary>
+                                                                           <p>Field Name</p>
+                                                                           <textarea id="fieldName23" name="fieldName23" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                           <p>Field Value</p>
+                                                                           <textarea id="fieldValue23" name="fieldValue23" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                           <p>
+                                                                              Field Inline?
+                                                                              <select id="fieldInline23">
+                                                                                 <option disabled selected value="no">
+                                                                                    no
+                                                                                 </option>
+                                                                                 <option value="yes">yes</option>
+                                                                                 <option value="no">no</option>
+                                                                              </select>
+                                                                           </p>
+                                                                           <details>
+                                                                              <summary>Field 24</summary>
+                                                                              <p>Field Name</p>
+                                                                              <textarea id="fieldName24" name="fieldName24" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                              <p>Field Value</p>
+                                                                              <textarea id="fieldValue24" name="fieldValue24" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                              <p>
+                                                                                 Field Inline?
+                                                                                 <select id="fieldInline24">
+                                                                                    <option disabled selected value="no">
+                                                                                       no
+                                                                                    </option>
+                                                                                    <option value="yes">yes</option>
+                                                                                    <option value="no">no</option>
+                                                                                 </select>
+                                                                              </p>
+                                                                              <details>
+                                                                                 <summary>Field 25</summary>
+                                                                                 <p>Field Name</p>
+                                                                                 <textarea id="fieldName25" name="fieldName25" placeholder="Some text..." rows="1" cols="50"></textarea>
+                                                                                 <p>Field Value</p>
+                                                                                 <textarea id="fieldValue25" name="fieldValue25" placeholder="Some text..." rows="3" cols="50"></textarea>
+                                                                                 <p>
+                                                                                    Field Inline?
+                                                                                    <select id="fieldInline25">
+                                                                                       <option disabled selected value="no">
+                                                                                          no
+                                                                                       </option>
+                                                                                       <option value="yes">yes</option>
+                                                                                       <option value="no">no</option>
+                                                                                    </select>
+                                                                                 </p>
+                                                                              </details>
+                                                                           </details>
+                                                                        </details>
+                                                                     </details>
+                                                                  </details>
+                                                               </details>
+                                                            </details>
+                                                         </details>
+                                                      </details>
+                                                   </details>
+                                                </details>
+                                             </details>
+                                          </details>
+                                       </details>
+                                    </details>
+                                 </details>
+                              </details>
+                           </details>
+                        </details>
+                     </details>
+                  </details>
+               </details>
+            </details>
+         </details>
+      </details>
+      <button type="button" id="embed" onclick="embed()">Create Embed</button>
+      <div id="copied"></div>
+      <div id="new"></div>
+      <footer>
+      Made With ❤️ | <a href="https://github.com/DevSpen/bdfd-embed-builder">View Source</a>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>

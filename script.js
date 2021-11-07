@@ -2,7 +2,6 @@ function embed() {
  try {
   let = document.getElementById("new").innerHTML = ""
 
-  // GENERAL VARIABLES
   const nomention = document.getElementById("nomention").value
   const content = document.getElementById("content").value
   const description = document.getElementById("description").value
@@ -21,7 +20,6 @@ function embed() {
     ? "]"
     : ";" + document.getElementById("index").value + "]"
 
-  // FIELD VARIABLES
   const fieldName1 = document.getElementById("fieldName1").value
   const fieldValue1 = document.getElementById("fieldValue1").value
   const fieldInline1 = document.getElementById("fieldInline1").value
@@ -122,34 +120,20 @@ function embed() {
   const fieldValue25 = document.getElementById("fieldValue25").value
   const fieldInline25 = document.getElementById("fieldInline25").value
 
-  // OTHER
   const cleanIndex = index.replace(/;|]/gi, "")
   const color = rawColor.replace("#", "")
   let output = null
 
-  //ERRORS
-  if (
-   cleanIndex > 10 ||
-   cleanIndex < 0 ||
-   Number.isInteger(Number(cleanIndex)) == false
-  ) {
-   alert(
-    "Invalid embed index! Please provide a valid integer between 1 and 10 for the embed index setting."
-   )
+  if (cleanIndex > 10 || cleanIndex < 0 || Number.isInteger(Number(cleanIndex)) == false) {
+   alert("Invalid embed index! Please provide a valid integer between 1 and 10 for the embed index setting.")
    return
   }
 
-  if (
-   (typeof color !== "string" &&
-    color.length !== 6 &&
-    isNaN(Number("0x" + color)) !== true) ||
-   color != 0
-  ) {
+  if (typeof color !== "string" && color.length !== 6 && isNaN(Number("0x" + color)) !== true || color != 0) {
    alert("Invalid color hex provided for embed color!")
    return
   }
 
-  // MAIN
   if (nomention == "yes") {
    output = output + "\n" + `\$nomention`
   }
@@ -202,7 +186,6 @@ function embed() {
    output = output + "\n" + `\$image[${image}` + index
   }
 
-  // FIELDS
   if (fieldName1 != "" && fieldValue1 != "") {
    output =
     output +
@@ -453,7 +436,6 @@ function embed() {
     index
   }
 
-  // RESULTS
   output = output.replace(null, "").replace(/\n\n/gi, "").trim()
   const resultDiv = document.getElementById("new")
   const result = document.createElement("p")
@@ -464,7 +446,6 @@ function embed() {
    output +
    `</code> </pre>`
 
-  // BUTTON EDIT
   let button = document.getElementById("embed")
   button.innerText = "Edit Embed"
  } catch (err) {

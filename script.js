@@ -127,7 +127,7 @@ function embed() {
    return
   }
 
-  if (typeof color !== "string" && color.length !== 6 && isNaN(Number("0x" + color)) !== true || color != 0) {
+  if (color.length !== 6 && color != 0 && color != "") {
    alert("Invalid color hex provided for embed color!")
    return
   }

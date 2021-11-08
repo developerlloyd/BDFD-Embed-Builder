@@ -1,7 +1,7 @@
 function embed() {
  try {
   let = document.getElementById("new").innerHTML = ""
-
+  // VARIABLES
   const nomention = document.getElementById("nomention").value
   const content = document.getElementById("content").value
   const description = document.getElementById("description").value
@@ -120,6 +120,7 @@ function embed() {
   const cleanIndex = index.replace(/;|]/gi, "")
   const color = rawColor.replace("#", "")
   let output = null
+  
 
   if (cleanIndex > 10 || cleanIndex < 0 || Number.isInteger(Number(cleanIndex)) == false) {
    alert("Invalid embed index! Please provide a valid integer between 1 and 10 for the embed index setting.")
@@ -451,7 +452,7 @@ function embed() {
   let button = document.getElementById("embed")
   button.innerText = "Edit Embed"
  } catch (err) {
-  alert("Error!")
+  alert("Error! Please supply valid arguments to create an embed.")
   console.log(err)
  }
 }

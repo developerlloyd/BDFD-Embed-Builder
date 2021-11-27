@@ -132,6 +132,41 @@ function embed() {
    return
   }
 
+  if (description.length > 4096) {
+    alert("Embed description to long! (${description.length} characters is larger than 4096 characters)")
+    return
+  }
+
+  if (title.length > 256) {
+    alert(`Embed title to long! (${title.length} characters is larger than 256 characters)`)
+    return
+  }
+
+  if (footer.length > 2048) {
+    alert(`Embed footer to long! (${footer.length} characters is larger than 2048 characters)`)
+    return
+  }
+
+  if (author.length > 256) {
+    alert(`Embed description to long! (${author.length} characters is larger than 256 characters)`)
+    return
+  }
+
+  if (fieldName1.length || fieldName2.length || fieldName3.length || fieldName4.length || fieldName5.length || fieldName6.length || fieldName7.length || fieldName8.length || fieldName9.length || fieldName10.length || fieldName11.length || fieldName12.length || fieldName13.length || fieldName14.length || fieldName15.length || fieldName16.length || fieldName17.length || fieldName18.length || fieldName19.length || fieldName20.length || fieldName21.length || fieldName22.length || fieldName23.length || fieldName24.length || fieldName25.length > 256) {
+    alert("Embed field name's cannot exceed 256 characters.")
+    return
+  }
+
+  if (fieldName1.length || fieldName2.length || fieldName3.length || fieldName4.length || fieldName5.length || fieldName6.length || fieldName7.length || fieldName8.length || fieldName9.length || fieldName10.length || fieldName11.length || fieldName12.length || fieldName13.length || fieldName14.length || fieldName15.length || fieldName16.length || fieldName17.length || fieldName18.length || fieldName19.length || fieldName20.length || fieldName21.length || fieldName22.length || fieldName23.length || fieldName24.length || fieldName25.length > 256) {
+    alert("Embed field name's cannot exceed 256 characters.")
+    return
+  }
+
+  if (fieldValue1.length || fieldValue2.length || fieldValue3.length || fieldValue4.length || fieldValue5.length || fieldValue6.length || fieldValue7.length || fieldValue8.length || fieldValue9.length || fieldValue10.length || fieldValue11.length || fieldValue12.length || fieldValue13.length || fieldValue14.length || fieldValue15.length || fieldValue16.length || fieldValue17.length || fieldValue18.length || fieldValue19.length || fieldValue20.length || fieldValue21.length || fieldValue22.length || fieldValue23.length || fieldValue24.length || fieldValue25.length > 256) {
+    alert("Embed field value's cannot exceed 1024 characters.")
+    return
+  }
+
   if (nomention == "yes") {
    output = output + "\n" + `\$nomention`
   }
